@@ -1,24 +1,28 @@
 # TaskFlow
 
-A modern, responsive task management application built with React, Vite, and Tailwind CSS.
+TaskFlow is a client-side task management dashboard built with React, Vite, and Tailwind CSS v4. Tasks are stored in the browser's localStorage; the application has no backend, accounts, or cloud synchronization.
 
-## Project Status
+## Features
 
-Initial setup.
+- Create, edit, complete, reopen, and delete tasks
+- Search and filter by task details, status, priority, and deadline state
+- Calendar month navigation, date selection, and due-date task views
+- Dashboard totals and upcoming deadlines derived from the task list
+- Versioned local storage with protected-data recovery and save retry behavior
 
-## Planned Features
+## Development
 
-- Task creation, editing, and deletion
-- Task status and priority management
-- Due dates
-- Search, filtering, and sorting
-- Dashboard statistics
-- Local persistence
-- Responsive desktop and mobile layouts
+Install dependencies and start the local development server:
 
-## Technology
+```sh
+npm install
+npm run dev
+```
 
-- React
-- Vite
-- JavaScript
-- Tailwind CSS
+## Checks
+
+```sh
+npm run test
+npm run lint
+npm run build
+```

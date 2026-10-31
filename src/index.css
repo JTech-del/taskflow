@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #0b1220;
+  --surface: #111c2e;
+  --surface-raised: #18263b;
+  --text: #f4f7fb;
+  --text-muted: #a3afbf;
+  --border: #2a3a50;
+  --border-interactive: #52657d;
+  --accent: #f47b3a;
+  --accent-hover: #ff955d;
+  --focus-ring: #ffad7d;
+  --font-body: "Aptos", "Segoe UI", sans-serif;
+  --font-code: "Cascadia Code", Consolas, monospace;
+
+  font-family: var(--font-body);
+  color: var(--text);
+  background-color: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-border-interactive: var(--border-interactive);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-focus-ring: var(--focus-ring);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-code);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
